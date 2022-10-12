@@ -17,6 +17,7 @@ class App extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const BottomNavigationPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

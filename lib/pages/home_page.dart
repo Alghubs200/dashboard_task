@@ -1,7 +1,9 @@
+import 'package:dashboard_task/widgets/book_list_1.dart';
 import 'package:flutter/material.dart';
 import 'package:dashboard_task/constants/app_constant.dart';
-import 'package:dashboard_task/constants/assets.dart';
+import 'package:dashboard_task/constants/movie_book.dart';
 
+import '../constants/assets.dart';
 import '../constants/palette.dart';
 import '../widgets/book_list.dart';
 
@@ -164,7 +166,8 @@ class HomePage extends StatelessWidget {
                                         ),
                                       ],
                                     ),
-                                  )
+                                  ),
+                                  SizedBox(height: 10),
                                 ],
                               ),
                             ),
@@ -176,7 +179,8 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            BookList()
+            BookList(),
+            // BookList1()
           ],
         ),
       ),
