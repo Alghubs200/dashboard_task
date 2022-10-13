@@ -197,12 +197,15 @@ class BookmarkPage extends StatelessWidget {
                               color: Colors.red[300],
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 0.1),
-                            child: Column(
-                              children: [
-                                Icon(Icons.keyboard_arrow_down_rounded),
-                                ElevatedButton(
+                          Column(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right: 30),
+                                child: Icon(Icons.keyboard_arrow_down_rounded),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 34),
+                                child: ElevatedButton(
                                   onPressed: () {},
                                   child: Text('Continue Reading'),
                                   style: ElevatedButton.styleFrom(
@@ -211,9 +214,9 @@ class BookmarkPage extends StatelessWidget {
                                           borderRadius:
                                               BorderRadius.circular(6)),
                                       fixedSize: const Size(250, 50)),
-                                )
-                              ],
-                            ),
+                                ),
+                              )
+                            ],
                           ),
                         ],
                       ),
