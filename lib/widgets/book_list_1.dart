@@ -58,11 +58,11 @@ class BookList1 extends StatelessWidget {
                               ),
                               SizedBox(height: 4),
                               Text(
-                                'Shienny M.S',
+                                movieBooks[index].name1,
                                 style: TextStyle(
                                   fontSize: 14,
                                   color: Palette.grey,
-                                  fontWeight: FontWeight.w400,
+                                  fontWeight: FontWeight.bold,
                                 ),
                               ),
                             ],

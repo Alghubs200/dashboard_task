@@ -51,7 +51,26 @@ class BookmarkPage extends StatelessWidget {
                     SizedBox(
                       height: 7,
                     ),
-                    Text('Book 3 of 4'),
+                    RichText(
+                        text: TextSpan(
+                            text: 'Book',
+                            style: TextStyle(
+                                color: Colors.grey[700],
+                                fontWeight: FontWeight.bold),
+                            children: [
+                          TextSpan(
+                            text: ' 3',
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          TextSpan(
+                            text: ' of 4',
+                            style: TextStyle(
+                                color: Colors.grey[700],
+                                fontWeight: FontWeight.bold),
+                          )
+                        ])),
                     SizedBox(
                       height: 10,
                     ),
@@ -200,13 +219,15 @@ class BookmarkPage extends StatelessWidget {
                           Column(
                             children: [
                               Padding(
-                                padding: const EdgeInsets.only(right: 30),
+                                padding: const EdgeInsets.only(right: 40),
                                 child: Icon(Icons.keyboard_arrow_down_rounded),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(right: 34),
+                                padding: const EdgeInsets.only(right: 39),
                                 child: ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    print('pressed');
+                                  },
                                   child: Text('Continue Reading'),
                                   style: ElevatedButton.styleFrom(
                                       primary: Colors.indigo,

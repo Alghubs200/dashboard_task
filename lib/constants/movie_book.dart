@@ -28,72 +28,52 @@ class MovieBook {
       MovieBook(
           image: 'assets/images/movie2.jpeg',
           name: 'The poppy war',
-          name1: '',
+          name1: 'Poppy',
           name2: 'Romance',
           image1: 'assets/images/romance.png',
           isSelected: false),
       MovieBook(
           image: 'assets/images/movie3.jpeg',
           name: 'Harry Potter',
-          name1: '',
+          name1: 'Potter',
           name2: 'Mystry',
           image1: 'assets/images/mystry.png',
           isSelected: false),
       MovieBook(
           image: 'assets/images/movie4.jpeg',
           name: 'Coven',
-          name1: '',
+          name1: 'Omen',
           name2: 'Crime',
           image1: 'assets/images/crime.png',
           isSelected: false),
       MovieBook(
           image: 'assets/images/movie5.jpeg',
           name: 'Spiderwicw',
-          name1: '',
+          name1: 'Spyder',
           name2: 'Thriller',
           image1: 'assets/images/thriller.png',
           isSelected: false),
       MovieBook(
           image: 'assets/images/movie6.jpeg',
           name: 'Pans Laby',
-          name1: '',
+          name1: 'Lobs',
           name2: 'Comedy',
           image1: 'assets/images/comedy.png',
           isSelected: false),
       MovieBook(
           image: 'assets/images/movie7.jpeg',
           name: 'The Golden pathways',
-          name1: '',
+          name1: 'Goldpath',
           name2: 'Drama',
           image1: 'assets/images/drama.png',
           isSelected: false),
       MovieBook(
           image: 'assets/images/movie8.jpeg',
           name: 'Avatar',
-          name1: '',
+          name1: 'James Cameron',
           name2: 'Series',
           image1: 'assets/images/series.png',
           isSelected: false),
     ];
   }
 }
-
-// class Category {
-//   const Category({required this.title, required this.isSelected});
-
-//   final String title;
-//   final bool isSelected;
-
-//   static List<Category> getAllCategories() {
-//     return const [
-//       Category(title: 'Fantasy', isSelected: false),
-//       Category(title: 'Romance', isSelected: false),
-//       Category(title: 'Mystry', isSelected: false),
-//       Category(title: 'Crime', isSelected: false),
-//       Category(title: 'Thriller', isSelected: false),
-//       Category(title: 'Comedy', isSelected: false),
-//       Category(title: 'Drama', isSelected: false),
-//       Category(title: 'Series', isSelected: false),
-//     ];
-//   }
-// }
