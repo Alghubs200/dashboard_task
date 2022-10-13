@@ -27,51 +27,61 @@ class BookList extends StatelessWidget {
               itemBuilder: (context, index) {
                 return Padding(
                   padding: const EdgeInsets.all(6),
-                  child: Container(
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(12),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey[500]!,
-                            spreadRadius: 2.0,
-                            blurRadius: 10.0,
-                          ),
-                        ]),
-                    margin: EdgeInsets.only(right: 6),
-                    // color: Colors.green,
-                    width: 150,
-                    child: Column(
-                      children: [
-                        SizedBox(height: 10),
-                        Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 10),
-                          child: Row(
-                            children: [
-                              Image.asset(
-                                movieBooks[index].image1,
-                                height: 26,
-                                width: 26,
-                              ),
-                              SizedBox(width: 20),
-                              Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(top: 2.8),
-                                    child: Text(
-                                      movieBooks[index].name2,
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Palette.grey,
-                                          fontSize: 16),
+                  child: InkWell(
+                    onTap: (() {
+                      setState() {
+                        movieBooks[index].isSelected =
+                            !movieBooks[index].isSelected;
+                      }
+                    }),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          color: movieBooks[index].isSelected == true
+                              ? Colors.purple
+                              : Colors.white,
+                          borderRadius: BorderRadius.circular(12),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey[500]!,
+                              spreadRadius: 2.0,
+                              blurRadius: 10.0,
+                            ),
+                          ]),
+                      margin: EdgeInsets.only(right: 6),
+                      // color: Colors.green,
+                      width: 150,
+                      child: Column(
+                        children: [
+                          SizedBox(height: 10),
+                          Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 10),
+                            child: Row(
+                              children: [
+                                Image.asset(
+                                  movieBooks[index].image1,
+                                  height: 26,
+                                  width: 26,
+                                ),
+                                SizedBox(width: 20),
+                                Column(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 2.8),
+                                      child: Text(
+                                        movieBooks[index].name2,
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Palette.grey,
+                                            fontSize: 16),
+                                      ),
                                     ),
-                                  ),
-                                ],
-                              ),
-                            ],
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 );

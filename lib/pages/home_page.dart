@@ -1,8 +1,10 @@
+import 'package:dashboard_task/pages/bookmark_page.dart';
 import 'package:dashboard_task/widgets/book_list_1.dart';
 import 'package:flutter/material.dart';
 import 'package:dashboard_task/constants/app_constant.dart';
 import 'package:dashboard_task/constants/movie_book.dart';
 
+import '../bottom_navigation_page.dart';
 import '../constants/assets.dart';
 import '../constants/palette.dart';
 import '../widgets/book_list.dart';
@@ -89,41 +91,52 @@ class HomePage extends StatelessWidget {
                       child: Column(
                         children: [
                           Expanded(
-                            child: Container(
-                              padding: EdgeInsets.all(16),
-                              width: double.infinity,
-                              decoration: BoxDecoration(
-                                color: Colors.grey[100],
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(5),
-                                ),
-                              ),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    AppConstant.msg,
-                                    style: TextStyle(
-                                      color: Palette.darkGrey,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w300,
-                                    ),
+                            child: GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) =>
+                                        BottomNavigationPage(),
                                   ),
-                                  SizedBox(height: 10),
-                                  InkWell(
-                                    onTap: () {},
-                                    child: Text(
-                                      AppConstant.continueReading,
+                                );
+                              },
+                              child: Container(
+                                padding: EdgeInsets.all(16),
+                                width: double.infinity,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[100],
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(5),
+                                  ),
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      AppConstant.msg,
                                       style: TextStyle(
-                                        decoration: TextDecoration.underline,
-                                        color: Palette.darkOrange,
+                                        color: Palette.darkGrey,
                                         fontSize: 14,
                                         fontWeight: FontWeight.w300,
                                       ),
                                     ),
-                                  )
-                                ],
+                                    SizedBox(height: 10),
+                                    InkWell(
+                                      onTap: () {},
+                                      child: Text(
+                                        AppConstant.continueReading,
+                                        style: TextStyle(
+                                          decoration: TextDecoration.underline,
+                                          color: Palette.darkOrange,
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.w300,
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                           ),
@@ -180,7 +193,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
             BookList(),
-            // BookList1()
+            BookList1()
           ],
         ),
       ),

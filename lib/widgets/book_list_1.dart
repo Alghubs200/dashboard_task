@@ -19,10 +19,10 @@ class BookList1 extends StatelessWidget {
         children: [
           SizedBox(height: 10),
           Padding(
-            padding: const EdgeInsets.only(left: 18),
+            padding: const EdgeInsets.only(left: 1),
             child: Container(
               color: Palette.white,
-              height: 270,
+              height: 280,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: movieBooks.length,
@@ -31,7 +31,7 @@ class BookList1 extends StatelessWidget {
                     color: Palette.white,
                     margin: EdgeInsets.only(right: 20),
                     // color: Colors.green,
-                    width: 160,
+                    width: 190,
                     child: Column(
                       children: [
                         Expanded(

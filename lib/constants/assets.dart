@@ -9,5 +9,5 @@ class Assets {
   static const String movie6 = 'assets/images/movie6.jpeg';
   static const String movie7 = 'assets/images/movie7.jpeg';
   static const String movie8 = 'assets/images/movie8.jpeg';
-  static const String icon1 = 'assets/images/hat.jpeg';
+  static const String movie1op = 'assets/images/movie1_opacity.png';
 }
