@@ -37,9 +37,11 @@ class BookList1 extends StatelessWidget {
                         Expanded(
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(12),
-                            child: Image.asset(
-                              movieBooks[index].image,
-                              fit: BoxFit.cover,
+                            child: Container(
+                              child: Image.asset(
+                                movieBooks[index].image,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ),
