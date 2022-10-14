@@ -1,3 +1,4 @@
+import 'package:dashboard_task/constants/assets.dart';
 import 'package:dashboard_task/constants/book_data.dart';
 import 'package:dashboard_task/constants/movie_book.dart';
 import 'package:flutter/material.dart';
@@ -75,22 +76,507 @@ class SearchPage extends StatelessWidget {
               height: 20,
             ),
             Container(
-              height: 200,
+              height: 177,
               width: 400,
-              color: Colors.black,
-              child:
+              color: Colors.white,
+              child: Column(
+                children: [
                   Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Container(
-                  child: Center(child: Text('data')),
-                  height: 35,
-                  width: 75,
-                  decoration: BoxDecoration(
-                    color: Colors.green[100],
-                    borderRadius: BorderRadius.circular(12),
+                    Container(
+                      child: Center(
+                        child: RichText(
+                            text: TextSpan(
+                                style: Theme.of(context).textTheme.bodyText1,
+                                children: [
+                              TextSpan(text: 'TM Academy'),
+                              WidgetSpan(
+                                child: Padding(
+                                  padding: EdgeInsets.only(top: 9, left: 6),
+                                  child: Icon(
+                                    Icons.close_rounded,
+                                    color: Colors.black,
+                                    size: 20,
+                                  ),
+                                ),
+                              )
+                            ])),
+                      ),
+                      height: 29,
+                      width: 130,
+                      decoration: BoxDecoration(
+                        color: Colors.green[50],
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 55,
+                    ),
+                    Container(
+                      child: Center(
+                        child: RichText(
+                            text: TextSpan(
+                                style: Theme.of(context).textTheme.bodyText1,
+                                children: [
+                              TextSpan(text: 'J.K. Rowling'),
+                              WidgetSpan(
+                                child: Padding(
+                                  padding: EdgeInsets.only(top: 9, left: 6),
+                                  child: Icon(
+                                    Icons.close_rounded,
+                                    color: Colors.black,
+                                    size: 20,
+                                  ),
+                                ),
+                              )
+                            ])),
+                      ),
+                      height: 29,
+                      width: 130,
+                      decoration: BoxDecoration(
+                        color: Colors.green[50],
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                  ]),
+                  SizedBox(
+                    height: 20,
                   ),
-                )
-              ]),
-            )
+                  Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                    Container(
+                      child: Center(
+                        child: RichText(
+                            text: TextSpan(
+                                style: Theme.of(context).textTheme.bodyText1,
+                                children: [
+                              TextSpan(text: 'Mystique'),
+                              WidgetSpan(
+                                child: Padding(
+                                  padding: EdgeInsets.only(top: 9, left: 6),
+                                  child: Icon(
+                                    Icons.close_rounded,
+                                    color: Colors.black,
+                                    size: 20,
+                                  ),
+                                ),
+                              )
+                            ])),
+                      ),
+                      height: 29,
+                      width: 130,
+                      decoration: BoxDecoration(
+                        color: Colors.green[50],
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 40,
+                    ),
+                    Container(
+                      child: Center(
+                        child: RichText(
+                            text: TextSpan(
+                                style: Theme.of(context).textTheme.bodyText1,
+                                children: [
+                              TextSpan(text: 'Marmut Merah jambu'),
+                              WidgetSpan(
+                                child: Padding(
+                                  padding: EdgeInsets.only(top: 9, left: 6),
+                                  child: Icon(
+                                    Icons.close_rounded,
+                                    color: Colors.black,
+                                    size: 20,
+                                  ),
+                                ),
+                              )
+                            ])),
+                      ),
+                      height: 29,
+                      width: 170,
+                      decoration: BoxDecoration(
+                        color: Colors.green[50],
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                  ]),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                    Container(
+                      child: Center(
+                        child: RichText(
+                            text: TextSpan(
+                                style: Theme.of(context).textTheme.bodyText1,
+                                children: [
+                              TextSpan(text: 'The Lord of the Rings'),
+                              WidgetSpan(
+                                child: Padding(
+                                  padding: EdgeInsets.only(top: 9, left: 6),
+                                  child: Icon(
+                                    Icons.close_rounded,
+                                    color: Colors.black,
+                                    size: 20,
+                                  ),
+                                ),
+                              )
+                            ])),
+                      ),
+                      height: 29,
+                      width: 170,
+                      decoration: BoxDecoration(
+                        color: Colors.green[50],
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 60,
+                    ),
+                    Container(
+                      child: Center(
+                        child: RichText(
+                            text: TextSpan(
+                                style: Theme.of(context).textTheme.bodyText1,
+                                children: [
+                              TextSpan(text: 'The Smurf'),
+                              WidgetSpan(
+                                child: Padding(
+                                  padding: EdgeInsets.only(top: 9, left: 6),
+                                  child: Icon(
+                                    Icons.close_rounded,
+                                    color: Colors.black,
+                                    size: 20,
+                                  ),
+                                ),
+                              )
+                            ])),
+                      ),
+                      height: 29,
+                      width: 130,
+                      decoration: BoxDecoration(
+                        color: Colors.green[50],
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                  ]),
+                ],
+              ),
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20),
+                      child: Text(
+                        'Top Book Search',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 20),
+                  child: Row(
+                    children: [
+                      Container(
+                          width: 48.0,
+                          height: 53.0,
+                          decoration: new BoxDecoration(
+                              // color: Colors.red,
+                              borderRadius: BorderRadius.circular(7),
+                              image: new DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: AssetImage(Assets.movie1)))),
+                      SizedBox(
+                        width: 4,
+                      ),
+                      Column(
+                        children: [
+                          Text(
+                            '    Critical Elevan',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            'Ika Natasha',
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        width: 30,
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                              width: 48.0,
+                              height: 53.0,
+                              decoration: new BoxDecoration(
+                                  // color: Colors.red,
+                                  borderRadius: BorderRadius.circular(7),
+                                  image: new DecorationImage(
+                                      fit: BoxFit.fill,
+                                      image: AssetImage(Assets.movie2)))),
+                          SizedBox(
+                            width: 4,
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                '    Percy Jackson',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                'rick Riodran',
+                                style: TextStyle(
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 20),
+                  child: Row(
+                    children: [
+                      Container(
+                          width: 48.0,
+                          height: 53.0,
+                          decoration: new BoxDecoration(
+                              // color: Colors.red,
+                              borderRadius: BorderRadius.circular(7),
+                              image: new DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: AssetImage(Assets.movie3)))),
+                      SizedBox(
+                        width: 4,
+                      ),
+                      Column(
+                        children: [
+                          Text(
+                            '    The Mercies',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            'Kiran Millwood',
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        width: 30,
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                              width: 48.0,
+                              height: 53.0,
+                              decoration: new BoxDecoration(
+                                  // color: Colors.red,
+                                  borderRadius: BorderRadius.circular(7),
+                                  image: new DecorationImage(
+                                      fit: BoxFit.fill,
+                                      image: AssetImage(Assets.movie4)))),
+                          SizedBox(
+                            width: 4,
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                '    Serendity Pity',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                'Erisca Febriani',
+                                style: TextStyle(
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 20),
+                  child: Row(
+                    children: [
+                      Container(
+                          width: 48.0,
+                          height: 53.0,
+                          decoration: new BoxDecoration(
+                              // color: Colors.red,
+                              borderRadius: BorderRadius.circular(7),
+                              image: new DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: AssetImage(Assets.movie5)))),
+                      SizedBox(
+                        width: 4,
+                      ),
+                      Column(
+                        children: [
+                          Text(
+                            '    Pergi',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            '       Pere Liye',
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        width: 30,
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                              width: 48.0,
+                              height: 53.0,
+                              decoration: new BoxDecoration(
+                                  // color: Colors.red,
+                                  borderRadius: BorderRadius.circular(7),
+                                  image: new DecorationImage(
+                                      fit: BoxFit.fill,
+                                      image: AssetImage(Assets.movie6)))),
+                          SizedBox(
+                            width: 4,
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                '    Twice shy',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                'Sarah Hogle',
+                                style: TextStyle(
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 20),
+                  child: Row(
+                    children: [
+                      Container(
+                          width: 48.0,
+                          height: 53.0,
+                          decoration: new BoxDecoration(
+                              // color: Colors.red,
+                              borderRadius: BorderRadius.circular(7),
+                              image: new DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: AssetImage(Assets.movie7)))),
+                      SizedBox(
+                        width: 4,
+                      ),
+                      Column(
+                        children: [
+                          Text(
+                            '    Harry Potter',
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            'J K Rowling',
+                            style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      ),
+                      SizedBox(
+                        width: 30,
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                              width: 48.0,
+                              height: 53.0,
+                              decoration: new BoxDecoration(
+                                  // color: Colors.red,
+                                  borderRadius: BorderRadius.circular(7),
+                                  image: new DecorationImage(
+                                      fit: BoxFit.fill,
+                                      image: AssetImage(Assets.movie1)))),
+                          SizedBox(
+                            width: 4,
+                          ),
+                          Column(
+                            children: [
+                              Text(
+                                '    Twilight',
+                                style: TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              SizedBox(
+                                height: 4,
+                              ),
+                              Text(
+                                'Stephene Mayer',
+                                style: TextStyle(
+                                    color: Colors.grey,
+                                    fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
