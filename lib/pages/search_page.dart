@@ -312,7 +312,7 @@ class SearchPage extends StatelessWidget {
                         ],
                       ),
                       SizedBox(
-                        width: 30,
+                        width: 50,
                       ),
                       Row(
                         children: [
@@ -387,7 +387,7 @@ class SearchPage extends StatelessWidget {
                         ],
                       ),
                       SizedBox(
-                        width: 30,
+                        width: 50,
                       ),
                       Row(
                         children: [
@@ -462,7 +462,7 @@ class SearchPage extends StatelessWidget {
                         ],
                       ),
                       SizedBox(
-                        width: 30,
+                        width: 50,
                       ),
                       Row(
                         children: [
@@ -537,7 +537,7 @@ class SearchPage extends StatelessWidget {
                         ],
                       ),
                       SizedBox(
-                        width: 30,
+                        width: 60,
                       ),
                       Row(
                         children: [
